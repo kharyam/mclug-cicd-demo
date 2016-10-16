@@ -46,3 +46,11 @@ Run the ci-cd-demo.sh script as root, e.g.
 13. In the upper right, click login and login as the user admin with password of password
 
 14. Try to deploy to test again and it will proeed. Deploy to production as well to complete the demo
+
+## Cleaning up
+
+Once you are done with this project, you can clean up your environment by running:
+
+        sudo ./ci-cd-cleanup.sh
+
+By default this will not remove the downladed docker images.  Uncomment the last 3 lines of the script to remove the images as well.
