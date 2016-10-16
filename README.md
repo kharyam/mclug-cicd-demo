@@ -19,13 +19,13 @@ Run the ci-cd-demo.sh script as root, e.g.
 
 ## Stepping through the demo
 
-1. Navigate to the Apache HTTPD page (http://localhost) to view the deployed index.html page
+1. Navigate to the Apache HTTPD page [http://localhost](http://localhost) to view the deployed index.html page
 
-2. Navigate to http://localhost:8080 to go to the jenkins page.
+2. Navigate to [http://localhost:8080](http://localhost:8080) to go to the jenkins page.
 
 3. click the *cicd-demo* project and note the pipeline has run once
 
-4. Log into GOGS (http://localhost:3000) as the user *developer* with password of *password*
+4. Log into GOGS [http://localhost:3000](http://localhost:3000) as the user *developer* with password of *password*
 
 5. Click the *cicd-demo* project on the right
 
@@ -45,7 +45,7 @@ Run the ci-cd-demo.sh script as root, e.g.
 
 13. In the upper right, click login and login as the user admin with password of password
 
-14. Try to deploy to test again and it will proeed. Deploy to production as well to complete the demo
+14. Try to deploy to test again and it will proceed. Deploy to production as well to complete the demo
 
 ## Cleaning up
 
