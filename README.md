@@ -37,7 +37,7 @@ Run the ci-cd-demo.sh script as root, e.g.
 
 9. Go back to the Jenkins page and wait for a new pipeline instance to begin
 
-10. Once the *Deploy to Development Server* stage is done, go back to the  Apache HTTPD page, refresh it, and note the background colore has changed
+10. Once the *Deploy to Development Server* stage is done, go back to the  Apache HTTPD page, refresh it, and note the background color has changed
 
 11. Go back to the jenkins page, click the box under "Deploy to Test Server"
 
@@ -46,6 +46,8 @@ Run the ci-cd-demo.sh script as root, e.g.
 13. In the upper right, click login and login as the user admin with password of password
 
 14. Try to deploy to test again and it will proceed. Deploy to production as well to complete the demo
+
+Note that the "Deploy to Test Server" and "Deploy to Production Server" stages are just placeholders that don't actuall deploy the code anywhere.
 
 ## Cleaning up
 
