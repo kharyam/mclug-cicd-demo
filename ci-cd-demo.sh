@@ -12,10 +12,6 @@ APACHE_VOLUME=${VOLUME_PATH}/apache-data
 tar -xzvf ci-cd-volumes.tar.gz -C ${VOLUME_PARENT_PATH}
 tar -xzvf ci-cd-jenkins-plugins.tar.gz -C ${VOLUME_PARENT_PATH}
 
-#mkdir -p ${GOGS_VOLUME}
-#mkdir -p ${JENKINS_VOLUME}
-#mkdir -p ${APACHE_VOLUME}
-
 # Pull all images
 docker pull gogs/gogs
 docker pull jenkins
@@ -38,9 +34,6 @@ docker run -d --net=cicd-network --name jenkins-server -v ${JENKINS_VOLUME}:/var
 
 # Start Apache HTTPD
 docker run -d --net=cicd-network --name httpd-server -v ${APACHE_VOLUME}:/usr/local/apache2/htdocs:z -p ${APACHE_HTTP_PORT}:80 httpd
-
-# Add our initial html page
-#cp index.html ${APACHE_VOLUME}
 
 echo Apache HTTPD url is http://localhost:${APACHE_HTTP_PORT}
 echo GOGS  url is http://localhost:${GOGS_HTTP_PORT}
